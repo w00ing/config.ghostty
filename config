@@ -64,10 +64,17 @@ adjust-cell-height=1
 keybind = super+shift+d=text:\x01\x2d
 
 # open horizontal split (|)
-keybind = super+d=text:\x01\x7c
+keybind = super+d=text:\x01\x5c
 
 # close pane (x)
 keybind = super+w=text:\x01\x78
+
+# New tmux window on Cmd+t in tmux it is Ctrl+b+c
+keybind = super+t=text:\x01\x63
+
+# Switch to a window using tmux-fzf on Cmd+p in tmux it is Ctrl+b+w
+keybind = super+p=text:\x01\x77
+
 
 # switch tabs (1–9)
 keybind = super+digit1=text:\x01\x31
@@ -83,4 +90,3 @@ keybind = super+digit9=text:\x01\x39
 
 # Open search until scrollback is finished
 # keybind = super+f=write_screen_file:open
-
