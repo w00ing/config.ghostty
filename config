@@ -35,8 +35,10 @@
 cursor-style = bar
 cursor-style-blink = false 
 shell-integration-features = no-cursor
-keybind = shift+enter=text:\n
 scrollback-limit=1000000
+
+# Treat Option as Alt for Meta keybindings (tmux/neovim)
+macos-option-as-alt = true
 
 # tmux integration - send save-buffer command
 keybind = cmd+s=text:\x01\x73
@@ -77,6 +79,7 @@ keybind = super+p=text:\x01\x77
 
 
 # switch tabs (1–9)
+keybind = super+digit0=text:\x01\x30
 keybind = super+digit1=text:\x01\x31
 keybind = super+digit2=text:\x01\x32
 keybind = super+digit3=text:\x01\x33
