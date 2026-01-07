@@ -40,12 +40,6 @@ scrollback-limit=1000000
 # Treat Option as Alt for Meta keybindings (tmux/neovim)
 macos-option-as-alt = true
 
-# tmux integration - send save-buffer command
-keybind = cmd+s=text:\x01\x73
-
-# tmux prefix to toggle zoom on current pane
-keybind = cmd+b=text:\x01\x7a
-
 # aesthetics
 background-opacity = 0.85
 background-blur=16
@@ -61,7 +55,7 @@ font-thicken=true
 font-thicken-strength=1
 adjust-cell-height=1
 
-# Keybindings
+# Keybindings for tmux
 # open vertical split (-)
 keybind = super+shift+d=text:\x01\x2d
 
@@ -89,6 +83,12 @@ keybind = super+digit6=text:\x01\x36
 keybind = super+digit7=text:\x01\x37
 keybind = super+digit8=text:\x01\x38
 keybind = super+digit9=text:\x01\x39
+
+# tmux integration - send save-buffer command
+# keybind = cmd+s=text:\x01\x73
+
+# tmux prefix to toggle zoom on current pane
+# keybind = cmd+b=text:\x01\x7a
 
 
 # Open search until scrollback is finished
