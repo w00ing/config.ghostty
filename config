@@ -55,27 +55,27 @@ font-thicken=true
 font-thicken-strength=1
 adjust-cell-height=1
 
-# Keybindings for tmux
-# open vertical split (-)
+# Keybindings for tmux (sends Ctrl+A prefix)
+# open vertical split (-) -> Ctrl+A, -
 keybind = super+shift+d=text:\x01\x2d
 
-# open horizontal split (|)
+# open horizontal split (|) -> Ctrl+A, \
 keybind = super+d=text:\x01\x5c
 
-# close pane (x)
+# close pane (x) -> Ctrl+A, x
 keybind = super+w=text:\x01\x78
 
-# New tmux window on Cmd+t in tmux it is Ctrl+b+c
+# New tmux window on Cmd+t -> Ctrl+A, c
 keybind = super+t=text:\x01\x63
 
-# Switch to a window using tmux-fzf on Cmd+p in tmux it is Ctrl+b+w
+# Switch to a window using tmux-fzf on Cmd+p -> Ctrl+A, w
 keybind = super+p=text:\x01\x77
 
-# next/previous tmux window
+# next/previous tmux window -> Ctrl+A, n / Ctrl+A, p
 keybind = super+shift+bracket_right=text:\x01\x6e
 keybind = super+shift+bracket_left=text:\x01\x70
 
-# switch tabs (1–9)
+# switch tabs (1–9) -> Ctrl+A, 0–9
 keybind = super+digit0=text:\x01\x30
 keybind = super+digit1=text:\x01\x31
 keybind = super+digit2=text:\x01\x32
@@ -87,10 +87,10 @@ keybind = super+digit7=text:\x01\x37
 keybind = super+digit8=text:\x01\x38
 keybind = super+digit9=text:\x01\x39
 
-# tmux integration - send save-buffer command
+# tmux integration - send save-buffer command -> Ctrl+A, s
 keybind = cmd+s=text:\x01\x73
 
-# tmux prefix to toggle zoom on current pane
+# tmux prefix to toggle zoom on current pane -> Ctrl+A, z
 # keybind = cmd+b=text:\x01\x7a
 
 
