@@ -71,6 +71,9 @@ keybind = super+t=text:\x01\x63
 # Switch to a window using tmux-fzf on Cmd+p in tmux it is Ctrl+b+w
 keybind = super+p=text:\x01\x77
 
+# next/previous tmux window
+keybind = super+shift+bracket_right=text:\x01\x6e
+keybind = super+shift+bracket_left=text:\x01\x70
 
 # switch tabs (1–9)
 keybind = super+digit0=text:\x01\x30
