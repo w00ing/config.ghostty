@@ -87,6 +87,10 @@ keybind = super+digit7=text:\x01\x37
 keybind = super+digit8=text:\x01\x38
 keybind = super+digit9=text:\x01\x39
 
+# Use Home/End sequences on Cmd+Left/Right to avoid sending Ctrl+A/E to tmux.
+keybind = super+arrow_left=csi:H
+keybind = super+arrow_right=csi:F
+
 # tmux integration - send save-buffer command -> Ctrl+A, s
 keybind = cmd+s=text:\x01\x73
 
